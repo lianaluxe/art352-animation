@@ -18,8 +18,8 @@ div.bubble:nth-of-type(1) {
   background-color: #00FF00;
   top: 53.5%;
   left: 50%;
-  -webkit-animation: bubble 4s ease-in infinite;
-          animation: bubble 4s ease-in infinite;
+  -webkit-transition: all 4s ease-in;
+          transition: all 4s ease-in;
 }
 
 div.bubble:nth-of-type(2) {
@@ -30,10 +30,8 @@ div.bubble:nth-of-type(2) {
   background-color: #00FF00;
   top: 54%;
   left: 45%;
-  -webkit-animation: bubble 4.5s ease-in infinite;
-          animation: bubble 4.5s ease-in infinite;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-transition: all 4.5s ease-in 1s;
+          transition: all 4.5s ease-in 1s;
 }
 
 div.bubble:nth-of-type(3) {
@@ -44,8 +42,8 @@ div.bubble:nth-of-type(3) {
   background-color: #00FF00;
   top: 55%;
   left: 45%;
-  -webkit-animation: bubble 5s linear infinite;
-          animation: bubble 5s linear infinite;
+  -webkit-transition: all 5s linear;
+          transition: all 5s linear;
 }
 
 div.bubble:nth-of-type(4) {
@@ -56,10 +54,8 @@ div.bubble:nth-of-type(4) {
   background-color: #00FF00;
   top: 55%;
   left: 55%;
-  -webkit-animation: bubble 4s linear infinite;
-          animation: bubble 4s linear infinite;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  -webkit-transition: all  4s linear 3s;
+          transition: all 4s linear 3s;
 }
 
 div.bubble:nth-of-type(5) {
@@ -70,8 +66,8 @@ div.bubble:nth-of-type(5) {
   background-color: #00FF00;
   top: 55%;
   left: 42%;
-  -webkit-animation: bubble 5s linear infinite;
-          animation: bubble 5s linear infinite;
+  -webkit-transition: all 5s linear;
+          transition: all 5s linear;
 }
 
 div.bubble:nth-of-type(6) {
@@ -82,22 +78,10 @@ div.bubble:nth-of-type(6) {
   background-color: #00FF00;
   top: 53.5%;
   left: 52%;
-  -webkit-animation: bubble 5s linear infinite;
-          animation: bubble 5s linear infinite;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  -webkit-transition: all 5s linear 2s;
+          transition: all 5s linear 2s;
 }
 
-@-webkit-keyframes bubble {
-  100% {
-    -webkit-transform: translateY(-500px);
-    transform: translateY(-500px);
-  }
-}
-
-@keyframes bubble {
-  100% {
-    -webkit-transform: translateY(-500px);
-    transform: translateY(-500px);
-  }
+div.hover-here:hover .bubble {
+  top:-500px;
 }
