@@ -5,7 +5,7 @@ html, body {
   padding: 0;
   font-family: 'Roboto';
   font-weight: 300;
-  background-color: #111111;
+  background-color: rgb(50,50,50);
   font-size: 1.3em;
   overflow: hidden;
 }

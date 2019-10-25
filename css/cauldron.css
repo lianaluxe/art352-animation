@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(100,100,100);
+  background-color: rgb(50,50,50);
 }
 
 img {
@@ -10,27 +10,33 @@ img {
   left: 35%;
 }
 
-div {
+div.bubble:nth-of-type(1) {
   position: absolute;
   height: 50px;
   width: 50px;
   border-radius: 100%;
   background-color: #00FF00;
-  top: 45%;
+  top: 53.5%;
   left: 50%;
+  -webkit-animation: bubble 4s ease-in infinite;
+          animation: bubble 4s ease-in infinite;
 }
 
-div:nth-of-type(2) {
+div.bubble:nth-of-type(2) {
   position: absolute;
   height: 40px;
   width: 40px;
   border-radius: 100%;
   background-color: #00FF00;
-  top: 50%;
+  top: 54%;
   left: 45%;
+  -webkit-animation: bubble 4.5s ease-in infinite;
+          animation: bubble 4.5s ease-in infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
-div:nth-of-type(3) {
+div.bubble:nth-of-type(3) {
   position: absolute;
   height: 30px;
   width: 30px;
@@ -38,14 +44,60 @@ div:nth-of-type(3) {
   background-color: #00FF00;
   top: 55%;
   left: 45%;
+  -webkit-animation: bubble 5s linear infinite;
+          animation: bubble 5s linear infinite;
 }
 
-div:nth-of-type(4) {
+div.bubble:nth-of-type(4) {
   position: absolute;
   height: 20px;
   width: 20px;
   border-radius: 100%;
   background-color: #00FF00;
-  top: 45%;
+  top: 55%;
   left: 55%;
+  -webkit-animation: bubble 4s linear infinite;
+          animation: bubble 4s linear infinite;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+div.bubble:nth-of-type(5) {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  background-color: #00FF00;
+  top: 55%;
+  left: 42%;
+  -webkit-animation: bubble 5s linear infinite;
+          animation: bubble 5s linear infinite;
+}
+
+div.bubble:nth-of-type(6) {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  background-color: #00FF00;
+  top: 53.5%;
+  left: 52%;
+  -webkit-animation: bubble 5s linear infinite;
+          animation: bubble 5s linear infinite;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+@-webkit-keyframes bubble {
+  100% {
+    -webkit-transform: translateY(-500px);
+    transform: translateY(-500px);
+  }
+}
+
+@keyframes bubble {
+  100% {
+    -webkit-transform: translateY(-500px);
+    transform: translateY(-500px);
+  }
 }
