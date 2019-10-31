@@ -18,8 +18,8 @@ div.bubble:nth-of-type(1) {
   background-color: #00FF00;
   top: 53.5%;
   left: 50%;
-  -webkit-transition: all 4s ease-in;
-          transition: all 4s ease-in;
+  -webkit-transition: top 4s ease-in;
+          transition: top 4s ease-in;
 }
 
 div.bubble:nth-of-type(2) {
@@ -30,8 +30,8 @@ div.bubble:nth-of-type(2) {
   background-color: #00FF00;
   top: 54%;
   left: 45%;
-  -webkit-transition: all 4.5s ease-in 1s;
-          transition: all 4.5s ease-in 1s;
+  -webkit-transition: top 4.5s ease-in 1s;
+          transition: top 4.5s ease-in 1s;
 }
 
 div.bubble:nth-of-type(3) {
@@ -42,8 +42,8 @@ div.bubble:nth-of-type(3) {
   background-color: #00FF00;
   top: 55%;
   left: 45%;
-  -webkit-transition: all 5s linear;
-          transition: all 5s linear;
+  -webkit-transition: top 5s linear;
+          transition: top 5s linear;
 }
 
 div.bubble:nth-of-type(4) {
@@ -54,8 +54,8 @@ div.bubble:nth-of-type(4) {
   background-color: #00FF00;
   top: 55%;
   left: 55%;
-  -webkit-transition: all  4s linear 3s;
-          transition: all 4s linear 3s;
+  -webkit-transition: top 4s linear 3s;
+          transition: top 4s linear 3s;
 }
 
 div.bubble:nth-of-type(5) {
@@ -66,8 +66,8 @@ div.bubble:nth-of-type(5) {
   background-color: #00FF00;
   top: 55%;
   left: 42%;
-  -webkit-transition: all 5s linear;
-          transition: all 5s linear;
+  -webkit-transition: top 5s linear;
+          transition: top 5s linear;
 }
 
 div.bubble:nth-of-type(6) {
@@ -78,10 +78,10 @@ div.bubble:nth-of-type(6) {
   background-color: #00FF00;
   top: 53.5%;
   left: 52%;
-  -webkit-transition: all 5s linear 2s;
-          transition: all 5s linear 2s;
+  -webkit-transition: top 5s linear 2s;
+          transition: top 5s linear 2s;
 }
 
 div.hover-here:hover .bubble {
-  top:-500px;
+  top:-50%;
 }
