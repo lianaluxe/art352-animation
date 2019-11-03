@@ -55,7 +55,7 @@ nav a.current {
 /* modified from Irem Lopsum's pen at https://codepen.io/iremlopsum/pen/yeERRq */
 .rectangle {
   width: 90%;
-  height: 20%;
+  height: 21%;
   background-color: #00FF00;
   position: absolute;
   left: 17%;
